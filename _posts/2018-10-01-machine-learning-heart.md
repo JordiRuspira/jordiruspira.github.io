@@ -3,8 +3,8 @@ title: "Machine Learning With a Heart"
 date: 2018-10-01
 tags: [machine learning, data science, health]
 header:
-  image: "/images/mlheart/mlheart.png"
-excerpt: "Machine Learning, Perceptron, Data Science"
+  image: "/images/mlheart/Morning-Dew.jpg"
+excerpt: "Machine Learning, Health, Data Science"
 mathjax: "true"
 ---
 *(This post is under construction, and its content may have features from different sources. Once completed, I will update all the sources correctly.)*
