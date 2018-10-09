@@ -41,6 +41,41 @@ There are 14 columns in the dataset, where the patient_id column is a unique and
 * *max_heart_rate_achieved* (type: int): maximum heart rate achieved (beats per minute)
 * *exercise_induced_angina* (type: binary): exercise-induced chest pain (0: False, 1: True)
 
+## Exploratory data analysis
+
+We'll spend some time in this section, since there are some things to notice here. To start with, we'll make use of the `seaborn` package, which gives some really nice plots. The first thing we'll do is to check whether the both classes are balanced:
+
+```python
+    import seaborn as sns
+    ax = sns.countplot(df_labels['heart_disease_present'],label="Count")
+```
+
+FIGURA 
+
+Checking the figure, we can clearly see that both classes are balanced. A really nice way of checking which features are more valuable than others is a **correlation heatmap**. The heatmap shows the correlation between any two given features, being 1 totally correlated features (they would give the same information), -1 totally anticorrelated, and 0 no correlation at all. 
+
+
+FIGURA
+
+
+The plot above shows that the following features are the ones that are more correlated with the presence of a heart disease:
+
+* chest_pain_type
+* num_major_vessels
+* oldpeak_eq_st_depression
+* exercise_induced_angina
+* sex 
+* slope_of_peak_exercise_st_segment 
+* max_heart_rate_achieved (this one is the most anti-correlated!)
+
+So before entering into designing algorithms, let's do some more data exploration.
+
+
+
+
+
+
+
 
 Python code block:
 ```python
