@@ -13,11 +13,6 @@
     {% include head.html %}
     {% include head/custom.html %}
     
-    <nav>
-    	<a href="{{ site.baseurl }}/">Blog</a>
-    	<a href="{{ site.baseurl }}/acerca-de">Acerca de</a>
-    	<a href="{{ site.baseurl }}/feed">RSS</a>
-    </nav>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
